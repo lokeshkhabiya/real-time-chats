@@ -8,6 +8,7 @@ dotenv.config();
 const app = express();
 const port = 5000;
 
+app.use(express.json()) // to parse the data 
 
 app.use("/api/auth", authRoutes)
 app.use("/api/messages", messageRoutes)
